@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+ <rect width="1280" height="960" fill="#f8fafc"/>
+ <text x="60" y="72" font-family="Arial" font-size="37" font-weight="bold" fill="#172638">LCD 1602 без переходника → ESP32</text>
+ <text x="60" y="112" font-family="Arial" font-size="23" fill="#475569">Прототип первого этажа · питание логики экрана только 3,3 В · VO без регулятора</text>
+ <rect x="55" y="151" width="1170" height="677" rx="18" fill="#fff" stroke="#ced8e2" stroke-width="3"/>
+ <rect x="55" y="151" width="1170" height="56" rx="18" fill="#e7edf3"/>
+ <text x="88" y="188" font-family="Arial" font-size="23" font-weight="bold" fill="#172638">Контакт LCD</text>
+ <text x="375" y="188" font-family="Arial" font-size="23" font-weight="bold" fill="#172638">Назначение</text>
+ <text x="784" y="188" font-family="Arial" font-size="23" font-weight="bold" fill="#172638">Куда подключить</text>
+ <g font-family="Arial" font-size="23" fill="#172638">
+  <text x="88" y="252">1 · GND</text><text x="375" y="252">Общий минус</text><text x="784" y="252">ESP32 GND</text>
+  <text x="88" y="296">2 · VDD</text><text x="375" y="296">Питание логики</text><text x="784" y="296" font-weight="bold" fill="#b45716">ESP32 3V3</text>
+  <text x="88" y="340">3 · VO</text><text x="375" y="340">Контраст без ручки</text><text x="784" y="340">ESP32 GND</text>
+  <text x="88" y="384">4 · RS</text><text x="375" y="384">Управление</text><text x="784" y="384" font-weight="bold" fill="#1766a7">ESP32 GPIO16</text>
+  <text x="88" y="428">5 · RW</text><text x="375" y="428">Только запись</text><text x="784" y="428">ESP32 GND</text>
+  <text x="88" y="472">6 · E</text><text x="375" y="472">Управление</text><text x="784" y="472" font-weight="bold" fill="#1766a7">ESP32 GPIO17</text>
+  <text x="88" y="516">7–10 · D0–D3</text><text x="375" y="516">Не используются</text><text x="784" y="516">Не подключать</text>
+  <text x="88" y="560">11 · D4</text><text x="375" y="560">Данные</text><text x="784" y="560" font-weight="bold" fill="#1766a7">ESP32 GPIO23</text>
+  <text x="88" y="604">12 · D5</text><text x="375" y="604">Данные</text><text x="784" y="604" font-weight="bold" fill="#1766a7">ESP32 GPIO13</text>
+  <text x="88" y="648">13 · D6</text><text x="375" y="648">Данные</text><text x="784" y="648" font-weight="bold" fill="#1766a7">ESP32 GPIO4</text>
+  <text x="88" y="692">14 · D7</text><text x="375" y="692">Данные</text><text x="784" y="692" font-weight="bold" fill="#1766a7">ESP32 GPIO5</text>
+  <text x="88" y="736">15 · BLA / A</text><text x="375" y="736">Подсветка +</text><text x="784" y="736">5V через 220 Ом (опция)</text>
+  <text x="88" y="780">16 · BLK / K</text><text x="375" y="780">Подсветка −</text><text x="784" y="780">ESP32 GND</text>
+ </g>
+ <g stroke="#e4e9ef" stroke-width="2">
+  <path d="M76 270h1128 M76 314h1128 M76 358h1128 M76 402h1128 M76 446h1128 M76 490h1128 M76 534h1128 M76 578h1128 M76 622h1128 M76 666h1128 M76 710h1128 M76 754h1128"/>
+ </g>
+ <rect x="55" y="850" width="1170" height="72" rx="12" fill="#fff0df" stroke="#edc68d"/>
+ <text x="78" y="881" font-family="Arial" font-size="22" font-weight="bold" fill="#743b18">Не подавать 5 В на VDD экрана при прямом соединении с GPIO ESP32.</text>
+ <text x="78" y="909" font-family="Arial" font-size="20" fill="#743b18">На вашей фотографии подписи перевёрнуты — ориентируйтесь по словам на плате, а не по краю снимка.</text>
+</svg>

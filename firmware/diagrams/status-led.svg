@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390">
+ <style>
+  text { font-family: Arial, sans-serif; fill: #183449 }
+  .title { font-size: 32px; font-weight: bold }
+  .label { font-size: 25px; font-weight: bold }
+  .small { font-size: 20px }
+  .wire { stroke: #285675; stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round }
+ </style>
+ <rect width="1100" height="390" fill="#f8fbfd"/>
+ <text x="45" y="58" class="title">Красный индикатор каждой переговорной точки</text>
+ <rect x="40" y="110" width="200" height="115" rx="17" fill="#e4f1fb" stroke="#285675" stroke-width="3"/>
+ <text x="77" y="158" class="label">ESP32</text>
+ <text x="78" y="196" class="label">GPIO2</text>
+ <path class="wire" d="M240 169 H330 M485 169 H600 M690 169 H790"/>
+ <path d="M330 169 l18 -25 22 50 24 -50 22 50 24 -50 25 25" class="wire"/>
+ <text x="327" y="121" class="label">220–470 Ом</text>
+ <text x="333" y="227" class="small">330 Ом удобно</text>
+ <circle cx="644" cy="169" r="45" fill="#ffe2e2" stroke="#d64040" stroke-width="4"/>
+ <text x="626" y="179" font-family="Arial,sans-serif" font-size="33" font-weight="bold" fill="#c72e2e">LED</text>
+ <text x="561" y="245" class="small">длинная ножка (+)</text>
+ <text x="681" y="280" class="small">короткая ножка (−)</text>
+ <path d="M790 131 V208 M806 145 V194 M806 169 H900" class="wire"/>
+ <text x="920" y="179" class="label">GND</text>
+ <text x="48" y="340" class="small">Резистор и LED включены последовательно. Для пяти точек — пять отдельных резисторов и пять LED.</text>
+</svg>

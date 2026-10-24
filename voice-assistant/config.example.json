@@ -1,0 +1,18 @@
+{
+  "home": {
+    "name": "Москва",
+    "lat": 55.7558,
+    "lon": 37.6173
+  },
+  "gigachat_key_file": "gigachat-key.txt",
+  "gigachat_model": "GigaChat",
+  "whisper_model": "models/whisper-medium",
+  "control_box": "192.168.0.201",
+  "control_code": "CHANGE_ME",
+  "udp_port": 42042,
+  "assistant_room": 6,
+  "tts_engine": "silero",
+  "silero_model": "models/silero_v4_ru.pt",
+  "silero_voice": "xenia",
+  "edge_voice": "ru-RU-SvetlanaNeural"
+}

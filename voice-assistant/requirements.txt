@@ -1,0 +1,9 @@
+faster-whisper==1.2.1
+truststore==0.10.5
+requests
+numpy
+num2words
+edge-tts
+av
+# PyTorch (CPU) for the Silero voice, install separately:
+#   py -3.11 -m pip install torch --index-url https://download.pytorch.org/whl/cpu

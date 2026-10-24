@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="650" viewBox="0 0 1040 650">
+ <defs><style>
+ text{font-family:Arial,sans-serif;fill:#17324d}.title{font-size:28px;font-weight:bold}.body{font-size:20px}.small{font-size:16px}
+ .panel{fill:#f1f4f6;stroke:#4c6470;stroke-width:3}.frame{fill:#ced9e0;stroke:#294b62;stroke-width:3}
+ .grill{fill:#ffffff;fill-opacity:.48;stroke:#a0aab0;stroke-width:7}.hole{fill:white;stroke:#294b62;stroke-width:2}
+ .dimension{stroke:#d06032;stroke-width:2;fill:none}.leader{stroke:#17324d;stroke-width:2;fill:none}
+ </style></defs>
+ <rect width="1040" height="650" fill="white"/>
+ <text x="35" y="43" class="title">Примерка решётки на динамик</text>
+ <text x="35" y="72" class="small">Вид спереди, размеры показаны пропорционально. Перед сверлением примерить реальные детали.</text>
+
+ <!-- 6 screen units per millimetre: panel width 80, grille diameter 74, frame side 52. -->
+ <rect class="panel" x="65" y="112" width="480" height="480" rx="12"/>
+ <rect class="frame" x="149" y="196" width="312" height="312" rx="8"/>
+ <circle class="hole" cx="178" cy="225" r="11"/><circle class="hole" cx="432" cy="225" r="11"/>
+ <circle class="hole" cx="178" cy="479" r="11"/><circle class="hole" cx="432" cy="479" r="11"/>
+ <circle class="grill" cx="305" cy="352" r="222"/>
+ <circle cx="305" cy="352" r="137" fill="none" stroke="#bec8ce" stroke-width="2" stroke-dasharray="4 6"/>
+
+ <path class="dimension" d="M65 602 V615 M545 602 V615 M65 610 H545 M83 605 L65 610 L83 615 M527 605 L545 610 L527 615"/>
+ <text x="213" y="639" class="body">панель 80 мм</text>
+ <path class="leader" d="M445 190 L593 138 H615"/>
+ <text x="625" y="145" class="body">сетка Ø74 ±1 мм</text>
+ <text x="625" y="174" class="small">белая, поверх панели</text>
+ <path class="leader" d="M461 352 H615"/>
+ <text x="625" y="346" class="body">рамка 52 × 52 мм</text>
+ <text x="625" y="375" class="small">диагональ ≈73,5 мм</text>
+ <path class="leader" d="M432 479 L600 472 H615"/>
+ <text x="625" y="467" class="body">центры отверстий ≈60 мм</text>
+ <text x="625" y="496" class="small">по диагонали, по рисунку продавца</text>
+ <rect x="602" y="524" width="398" height="82" rx="10" fill="#fff7e6" stroke="#d4a846"/>
+ <text x="620" y="551" class="small">Край решётки почти совпадает с углами.</text>
+ <text x="620" y="576" class="small">Если выступают ушки, подрезать только кончики.</text>
+ <text x="620" y="598" class="small">Крепёжные отверстия оставить целыми.</text>
+</svg>

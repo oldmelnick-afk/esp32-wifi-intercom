@@ -1,0 +1,8 @@
+.pio/
+__pycache__/
+*.bin
+voice-assistant/models/
+voice-assistant/gigachat-key.txt
+voice-assistant/config.json
+voice-assistant/*.log
+voice-assistant/weather-cache.json

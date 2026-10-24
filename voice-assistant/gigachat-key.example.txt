@@ -1,0 +1,3 @@
+# Скопируйте в gigachat-key.txt и заполните (файл не публикуется)
+GIGACHAT_API_PERS
+ВАШ_AUTHORIZATION_KEY

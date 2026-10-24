@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030">
+ <defs>
+  <style>
+   text { font-family: Arial, sans-serif; fill: #183347; }
+   .title { font-size: 38px; font-weight: 700; }
+   .section { font-size: 27px; font-weight: 700; }
+   .head { font-size: 26px; font-weight: 700; }
+   .body { font-size: 22px; }
+   .small { font-size: 19px; }
+   .pin { font-size: 29px; font-weight: 700; }
+  </style>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#49718b"/></marker>
+ </defs>
+ <rect width="1600" height="1030" fill="#f6fafc"/>
+ <text x="55" y="65" class="title">ПЕРВЫЙ ЭТАЖ — МИКРОФОН И СВЕТОДИОД</text>
+ <text x="55" y="103" class="body">ESP32: вид со стороны пайки, USB слева. Указаны номера контактов в этом положении.</text>
+
+ <rect x="45" y="135" width="1510" height="508" rx="20" fill="#fff" stroke="#b6cedd" stroke-width="3"/>
+ <text x="72" y="180" class="section">Микрофон ICS-43434: надпись на модуле читается прямо</text>
+ <text x="72" y="211" class="small">Контакты на вашем модуле слева направо: SEL · LRCL · DOUT · BCLK · GND · 3V</text>
+ <rect x="83" y="243" width="1435" height="90" rx="15" fill="#183347"/>
+ <text x="107" y="273" font-size="18" fill="#cce5ef">МОДУЛЬ МИКРОФОНА — шесть отверстий с подписями</text>
+ <g text-anchor="middle">
+  <circle cx="204" cy="303" r="14" fill="#fff"/><circle cx="440" cy="303" r="14" fill="#fff"/><circle cx="676" cy="303" r="14" fill="#fff"/><circle cx="912" cy="303" r="14" fill="#fff"/><circle cx="1148" cy="303" r="14" fill="#fff"/><circle cx="1384" cy="303" r="14" fill="#fff"/>
+  <text x="204" y="374" class="pin">SEL</text><text x="440" y="374" class="pin">LRCL</text><text x="676" y="374" class="pin">DOUT</text><text x="912" y="374" class="pin">BCLK</text><text x="1148" y="374" class="pin">GND</text><text x="1384" y="374" class="pin">3V</text>
+ </g>
+ <g stroke="#49718b" stroke-width="4" marker-end="url(#arr)">
+  <path d="M204 392 V422"/><path d="M440 392 V422"/><path d="M676 392 V422"/><path d="M912 392 V422"/><path d="M1148 392 V422"/><path d="M1384 392 V422"/>
+ </g>
+ <g text-anchor="middle">
+  <rect x="92" y="442" width="224" height="113" rx="13" fill="#eaf1f5" stroke="#6a8594" stroke-width="2"/>
+  <rect x="328" y="442" width="224" height="113" rx="13" fill="#e9efff" stroke="#687db3" stroke-width="2"/>
+  <rect x="564" y="442" width="224" height="113" rx="13" fill="#e9efff" stroke="#687db3" stroke-width="2"/>
+  <rect x="800" y="442" width="224" height="113" rx="13" fill="#e9efff" stroke="#687db3" stroke-width="2"/>
+  <rect x="1036" y="442" width="224" height="113" rx="13" fill="#eaf1f5" stroke="#6a8594" stroke-width="2"/>
+  <rect x="1272" y="442" width="224" height="113" rx="13" fill="#fff0e7" stroke="#c86b3a" stroke-width="2"/>
+  <text x="204" y="481" class="head">общий GND</text><text x="204" y="517" class="small">верхний/нижний 02</text>
+  <text x="440" y="481" class="head">D27</text><text x="440" y="517" class="small">нижний 06</text>
+  <text x="676" y="481" class="head">D34</text><text x="676" y="517" class="small">нижний 12</text>
+  <text x="912" y="481" class="head">D14</text><text x="912" y="517" class="small">нижний 05</text>
+  <text x="1148" y="481" class="head">общий GND</text><text x="1148" y="517" class="small">верхний/нижний 02</text>
+  <text x="1384" y="481" class="head">3V3</text><text x="1384" y="517" class="small">верхний 01</text>
+ </g>
+ <text x="72" y="600" class="body">SEL и GND идут к одному общему минусу. На сигнальных проводах резисторы не нужны. Отверстие Port оставьте открытым.</text>
+
+ <rect x="45" y="668" width="1510" height="307" rx="20" fill="#fff" stroke="#e1b28c" stroke-width="3"/>
+ <text x="72" y="713" class="section">Красный светодиод состояния — отдельная цепь</text>
+ <g text-anchor="middle">
+  <rect x="80" y="756" width="235" height="89" rx="14" fill="#e9efff" stroke="#687db3" stroke-width="2"/>
+  <rect x="380" y="756" width="245" height="89" rx="14" fill="#fff5e4" stroke="#c79538" stroke-width="2"/>
+  <rect x="690" y="756" width="285" height="89" rx="14" fill="#fff0e7" stroke="#ce6944" stroke-width="2"/>
+  <rect x="1040" y="756" width="190" height="89" rx="14" fill="#eaf1f5" stroke="#6a8594" stroke-width="2"/>
+  <text x="197" y="792" class="head">D2 · верхний 04</text><text x="197" y="825" class="small">при READY ≈ 3,3 В</text>
+  <text x="502" y="792" class="head">220–470 Ом</text><text x="502" y="825" class="small">последовательно</text>
+  <text x="832" y="792" class="head">LED анод (+)</text><text x="832" y="825" class="small">обычно длинная ножка</text>
+  <text x="1135" y="792" class="head">LED катод (−)</text><text x="1135" y="825" class="small">короткая / плоский край</text>
+ </g>
+ <g stroke="#b85e31" stroke-width="5" marker-end="url(#arr)"><path d="M315 801 H365"/><path d="M625 801 H675"/><path d="M975 801 H1025"/><path d="M1230 801 H1284"/></g>
+ <text x="1300" y="808" class="head">GND</text>
+ <text x="72" y="897" class="body">Если ножки обрезаны, определяйте полярность мультиметром. Светодиод без резистора к D2 не подключать.</text>
+ <text x="72" y="937" class="body">Перед проверкой пайки или перестановкой проводов отключите USB и блок 5 В.</text>
+</svg>

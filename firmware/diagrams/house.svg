@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+ <defs><style>text{font-family:Arial,sans-serif;fill:#17324d}.head{font-size:29px;font-weight:bold}.small{font-size:17px}.label{font-size:22px;font-weight:bold}.box{fill:#f3f8fc;stroke:#26577c;stroke-width:2;rx:13}.wifi{stroke:#138b80;stroke-width:3;fill:none;stroke-dasharray:7 7}.bt{stroke:#7354a1;stroke-width:3;fill:none}</style></defs>
+ <rect width="1100" height="600" fill="white"/>
+ <text x="40" y="48" class="head">Связь на пять комнат</text>
+ <text x="40" y="77" class="small">Каждая точка питается от своей розетки 5 В. Wi‑Fi переносит звук между точками.</text>
+ <text x="40" y="104" class="small">Большая кнопка — всем; четыре маленькие — по одной выбранной комнате.</text>
+ <rect class="box" x="427" y="205" width="250" height="104"/>
+ <text x="484" y="246" class="label">Домашний Wi‑Fi</text><text x="460" y="278" class="small">одна локальная сеть</text>
+ <g class="box"><rect x="54" y="136" width="218" height="92"/><rect x="54" y="357" width="218" height="92"/><rect x="823" y="105" width="218" height="92"/><rect x="823" y="253" width="218" height="92"/><rect x="823" y="401" width="218" height="92"/></g>
+ <g class="label"><text x="81" y="173">Точка 1</text><text x="81" y="394">Точка 2</text><text x="850" y="142">Точка 3</text><text x="850" y="290">Точка 4</text><text x="850" y="438">Точка 5</text></g>
+ <g class="small"><text x="81" y="205">5 кнопок · динамик · BLE</text><text x="81" y="426">5 кнопок · динамик · BLE</text><text x="850" y="174">5 кнопок · динамик · BLE</text><text x="850" y="322">5 кнопок · динамик · BLE</text><text x="850" y="470">5 кнопок · динамик · BLE</text></g>
+ <path class="wifi" d="M272 181 L427 235 M272 403 L427 280 M677 230 L823 151 M677 257 L823 299 M677 280 L823 447"/>
+ <rect class="box" x="75" y="500" width="330" height="70"/><text x="97" y="530" class="label">Android или iPhone</text><text x="97" y="554" class="small">таймер и стоп через BLE</text>
+ <path class="bt" d="M183 500 V450 M405 537 H589 V310"/>
+ <text x="572" y="360" class="small">Музыка: Bluetooth к любой точке → Wi‑Fi (план)</text>
+</svg>
